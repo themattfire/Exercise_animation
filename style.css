@@ -90,25 +90,35 @@
 }
 
 .card__button-easeInOutSine {
-  animation: mymove 5s infinite;
-  transition: transform 0.6s cubic-bezier(0.61, 1, 0.88, 1);
+  animation: lefToRight 5s infinite;
+  transition: animation 0.6s cubic-bezier(0.61, 1, 0.88, 1);
 }
 
 .card__button-easeInQuart {
-  animation: mymove 5s infinite;
-  transition: transform 0.6s cubic-bezier(0.5, 0, 0.75, 0);
+  animation: rightToLeft 5s infinite;
+  transition: animation 0.6s cubic-bezier(0.5, 0, 0.75, 0);
 }
 
 .card__button-easeInOutCubic {
-  animation: mymove 5s infinite;
-  transition: transform 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+  animation: lefToRight 5s infinite;
+  transition: animation 0.6s cubic-bezier(0.65, 0, 0.35, 1);
 }
 
-@keyframes mymove {
+@keyframes lefToRight {
   from {
     left: 0px;
   }
   to {
     left: 300px;
+  }
+}
+
+@keyframes rightToLeft {
+  from {
+    right: 0px;
+  }
+
+  to {
+    right: 300px;
   }
 }
