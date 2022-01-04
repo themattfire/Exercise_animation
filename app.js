@@ -14,13 +14,17 @@ function loadEvents() {
 function sineFunction() {
   box.classList.remove('card__button-easeInQuart')
   box.classList.remove('card__button-easeInOutCubic')
-  box.classList.add('card__button-easeInOutElastic')
+  box.classList.add('card__button-easeInOutSine')
 }
 
 function quartFunction() {
+  box.classList.remove('card__button-easeInSine')
+  box.classList.remove('card__button-easeInOutCubic')
   box.classList.add('card__button-easeInQuart')
 }
 
 function cubicFunction() {
+  box.classList.remove('card__button-easeInQuart')
+  box.classList.remove('card__button-easeInOutCubic')
   box.classList.add('card__button-easeInOutCubic')
 }
