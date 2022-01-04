@@ -1,0 +1,168 @@
+* {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: white;
+  height: 100px;
+  display: flex;
+  align-content: center;
+}
+
+.header__logo {
+  margin: auto 100px;
+  font-size: 6rem;
+  font-weight: bold;
+  color: rgb(148, 191, 255);
+}
+
+.container {
+  background-image: url(./src/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: calc(100vh - 100px);
+}
+
+.container__card {
+  background-color: #ffffff59;
+  border-radius: 25px;
+  width: 75%;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  box-shadow: 2px 2px 8px rgb(0 0 0 / 25%);
+  padding: 100px;
+}
+
+.card__title {
+  font-size: 1.6rem;
+}
+
+.card__box {
+  height: 100px;
+  width: 100px;
+  background-color: #00afc1;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.card__text {
+  font-size: 1.4rem;
+  color: #747474;
+  font-weight: lighter;
+}
+
+.container__button {
+  display: flex;
+}
+
+.button__area {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.card__button {
+  width: 75%;
+  padding: 10px;
+  height: 50px;
+  color: white;
+  background-image: linear-gradient(to right, #5619fc 0%, #1ec5db 100%);
+  font-size: 2.1rem;
+  border: transparent;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.card__button-easeInOutElastic {
+  transition: left 0.6s cubic-bezier(0.61, 1, 0.88, 1);
+}
+
+.card__button-easeInQuart {
+  transition: transform 0.6s cubic-bezier(0.5, 0, 0.75, 0);
+}
+
+.card__button-easeInOutCubic {
+  transition: transform 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+@keyframes undefined-easeInOutElastic {
+  0% {
+    transform: translateX(0%);
+  }
+
+  4% {
+    transform: translateX(-0.08%);
+  }
+
+  8% {
+    transform: translateX(-0.1%);
+  }
+
+  18% {
+    transform: translateX(0.52%);
+  }
+
+  20% {
+    transform: translateX(0.39%);
+  }
+
+  28% {
+    transform: translateX(-2.35%);
+  }
+
+  30% {
+    transform: translateX(-2.39%);
+  }
+
+  38% {
+    transform: translateX(9.27%);
+  }
+
+  40% {
+    transform: translateX(11.75%);
+  }
+
+  60% {
+    transform: translateX(-111.75%);
+  }
+
+  62% {
+    transform: translateX(-109.27%);
+  }
+
+  70% {
+    transform: translateX(-97.61%);
+  }
+
+  72% {
+    transform: translateX(-97.65%);
+  }
+
+  80% {
+    transform: translateX(-100.39%);
+  }
+
+  82% {
+    transform: translateX(-100.52%);
+  }
+
+  90% {
+    transform: translateX(-99.97%);
+  }
+
+  92% {
+    transform: translateX(-99.9%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
