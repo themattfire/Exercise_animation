@@ -84,6 +84,11 @@
   margin-bottom: 50px;
 }
 
+.card__button:hover {
+  background-color: #00afc1;
+  cursor: pointer;
+}
+
 .card__button-easeInOutElastic {
   transition: left 0.6s cubic-bezier(0.61, 1, 0.88, 1);
 }
