@@ -1,13 +1,19 @@
 const box = document.querySelector('.card__box')
-const btnElastic = document.getElementById(elastic)
-const btnQuart = document.getElementById(Quart)
-const btnCubic = document.getElementById(Cubic)
+const btnSine = document.getElementById('sine')
+const btnQuart = document.getElementById('quart')
+const btnCubic = document.getElementById('cubic')
 
-btnElastic.addEventListener('click', elasticFunction())
-btnQuart.addEventListener('click', quartFunction())
-btnCubic.addEventListener('click', cubicFunction())
+loadEvents()
 
-function elasticFunction() {
+function loadEvents() {
+  btnSine.addEventListener('click', sineFunction)
+  btnQuart.addEventListener('click', quartFunction)
+  btnCubic.addEventListener('click', cubicFunction)
+}
+
+function sineFunction() {
+  box.classList.remove('card__button-easeInQuart')
+  box.classList.remove('card__button-easeInOutCubic')
   box.classList.add('card__button-easeInOutElastic')
 }
 
