@@ -12,19 +12,28 @@ function loadEvents() {
 }
 
 function sineFunction() {
-  box.classList.remove('card__button-easeInQuart')
-  box.classList.remove('card__button-easeInOutCubic')
   box.classList.add('card__button-easeInOutSine')
+  setTimeout(() => {
+    removeClasses()
+  }, 5000)
 }
 
 function quartFunction() {
-  box.classList.remove('card__button-easeInSine')
-  box.classList.remove('card__button-easeInOutCubic')
   box.classList.add('card__button-easeInQuart')
+  setTimeout(() => {
+    removeClasses()
+  }, 5000)
 }
 
 function cubicFunction() {
+  box.classList.add('card__button-easeInOutCubic')
+  setTimeout(() => {
+    removeClasses()
+  }, 5000)
+}
+
+function removeClasses() {
   box.classList.remove('card__button-easeInQuart')
   box.classList.remove('card__button-easeInOutCubic')
-  box.classList.add('card__button-easeInOutCubic')
+  box.classList.remove('card__button-easeInOutSine')
 }
